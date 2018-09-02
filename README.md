@@ -1,5 +1,5 @@
 # CourseraDS-Leaflet
-[click here for live demo](https://arnarejo.github.io/CourseraDS-Leaflet/index.html)
+[click here for live demo](https://arnarejo.github.io/CourseraDS-Leaflet/leaflet.html)
 
 * Create a web page using R Markdown that features a map created with Leaflet.
 * Host your webpage on either GitHub Pages, RPubs, or NeoCities.
