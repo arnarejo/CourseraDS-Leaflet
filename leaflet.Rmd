@@ -1,21 +1,32 @@
 ---
 title: "Leaflet App"
+author: "Abdul Rasheed Narejo"
+date: "September 2, 2018"
 output:
   html_document: default
-  pdf_document: default
 ---
 
+## About the 
+* Create a web page using R Markdown that features a map created with Leaflet.
+* Host your webpage on either GitHub Pages, RPubs, or NeoCities.
+* Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!
+
+
+My objective to combine country maps with earthquake data to generate a plot with earthquake locations reflective of earthquake size and additional details on popup.
+
+load required libraries
 ```{r}
 library(leaflet)
 library(maps)
 ```
 
+load data
 ```{r}
 data <- read.csv("earthquake_all.csv")
 data <- data[!is.na(data$mag) & data$mag > 0 & data$mag < 8,]
 ```
 
-# create basic leaflet graph (Created on September 1, 2018)
+create leaflet graph 
 ```{r}
 mapCountries = map("world", fill = TRUE, plot = FALSE)
 
